@@ -1,0 +1,117 @@
+{
+  "uid" : "e86df56d829b435a",
+  "name" : "Check status code of create order",
+  "fullName" : "order.CreateOrderTest.createOrderTest",
+  "historyId" : "ac610ae9ed826d8aeb2c1ba8655bbb29",
+  "time" : {
+    "start" : 1717451254592,
+    "stop" : 1717451262465,
+    "duration" : 7873
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Get ingredient IDs",
+      "time" : {
+        "start" : 1717451257236,
+        "stop" : 1717451260250,
+        "duration" : 3014
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Create an order with ingredient IDs and access token",
+      "time" : {
+        "start" : 1717451260254,
+        "stop" : 1717451261360,
+        "duration" : 1106
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "ingredientIds",
+        "value" : "[61c0c5a71d1f82001bdaaa6d, 61c0c5a71d1f82001bdaaa6f, 61c0c5a71d1f82001bdaaa70]"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Assert order created successfully",
+      "time" : {
+        "start" : 1717451261363,
+        "stop" : 1717451262464,
+        "duration" : 1101
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "response",
+        "value" : "io.restassured.internal.RestAssuredResponseImpl@6b43b101"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 3,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "order"
+  }, {
+    "name" : "testClass",
+    "value" : "order.CreateOrderTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "createOrderTest"
+  }, {
+    "name" : "suite",
+    "value" : "Tests for orders creation"
+  }, {
+    "name" : "host",
+    "value" : "casper1143.local"
+  }, {
+    "name" : "thread",
+    "value" : "9064@casper1143.local.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "e86df56d829b435a.json",
+  "parameterValues" : [ ]
+}

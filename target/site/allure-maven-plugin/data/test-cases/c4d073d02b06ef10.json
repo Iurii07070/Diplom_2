@@ -1,0 +1,123 @@
+{
+  "uid" : "c4d073d02b06ef10",
+  "name" : "Check status code of create user",
+  "fullName" : "user.CreateUserTest.createNewUserTest",
+  "historyId" : "9f23488ff0ae2c64834550bf3f00fedf",
+  "time" : {
+    "start" : 1717451289385,
+    "stop" : 1717451290598,
+    "duration" : 1213
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Create a new user",
+      "time" : {
+        "start" : 1717451289386,
+        "stop" : 1717451289870,
+        "duration" : 484
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "user",
+        "value" : "User{email='P8lRHULHpFP@yandex.ru', password='RoXi6WzEiPKn', name='d6roPkA'}"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Delete user",
+      "time" : {
+        "start" : 1717451289904,
+        "stop" : 1717451290570,
+        "duration" : 666
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "user",
+        "value" : "User{email='P8lRHULHpFP@yandex.ru', password='RoXi6WzEiPKn', name='d6roPkA'}"
+      }, {
+        "name" : "token",
+        "value" : "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NWUzYTE5OWVkMjgwMDAxYjQyNjYxZCIsImlhdCI6MTcxNzQ1MTI4OSwiZXhwIjoxNzE3NDUyNDg5fQ.F7WFrE7JAn7htnCa0ytVp_ZfWzErg-hYZL-EABQ5H9Q"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Assert delete user success",
+      "time" : {
+        "start" : 1717451290570,
+        "stop" : 1717451290597,
+        "duration" : 27
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "deleteUser",
+        "value" : "io.restassured.internal.RestAssuredResponseImpl@988eae9"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 3,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "user"
+  }, {
+    "name" : "testClass",
+    "value" : "user.CreateUserTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "createNewUserTest"
+  }, {
+    "name" : "suite",
+    "value" : "Tests for user creation"
+  }, {
+    "name" : "host",
+    "value" : "casper1143.local"
+  }, {
+    "name" : "thread",
+    "value" : "9064@casper1143.local.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "c4d073d02b06ef10.json",
+  "parameterValues" : [ ]
+}

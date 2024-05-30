@@ -1,0 +1,159 @@
+{
+  "uid" : "146f4d8c806e0dc3",
+  "name" : "Check status code of get orders when user authorized",
+  "fullName" : "order.GetOrderTest.getOrdersAuthorizedTest",
+  "historyId" : "3910af496aae085a1573abe2f53e760f",
+  "time" : {
+    "start" : 1717451266182,
+    "stop" : 1717451268395,
+    "duration" : 2213
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Create a new user",
+      "time" : {
+        "start" : 1717451266182,
+        "stop" : 1717451266831,
+        "duration" : 649
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "user",
+        "value" : "User{email='AMJgpEYSoBf@yandex.ru', password='VpCFrDqXMe9c', name='j1pc1HD'}"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Assert user creation successful",
+      "time" : {
+        "start" : 1717451266832,
+        "stop" : 1717451266889,
+        "duration" : 57
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "createResponse",
+        "value" : "io.restassured.internal.RestAssuredResponseImpl@10b063fd"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Assert orders retrieved successfully",
+      "time" : {
+        "start" : 1717451267532,
+        "stop" : 1717451267593,
+        "duration" : 61
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "response",
+        "value" : "io.restassured.internal.RestAssuredResponseImpl@639d808a"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Delete user",
+      "time" : {
+        "start" : 1717451267593,
+        "stop" : 1717451268350,
+        "duration" : 757
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "user",
+        "value" : "User{email='AMJgpEYSoBf@yandex.ru', password='VpCFrDqXMe9c', name='j1pc1HD'}"
+      }, {
+        "name" : "token",
+        "value" : "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NWUzYTAyOWVkMjgwMDAxYjQyNjYwMSIsImlhdCI6MTcxNzQ1MTI2NiwiZXhwIjoxNzE3NDUyNDY2fQ.foflWqZ_aD1Rz_rGVycGWN65sc4D4pYZBoAh1Po_j10"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Assert delete user success",
+      "time" : {
+        "start" : 1717451268351,
+        "stop" : 1717451268395,
+        "duration" : 44
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "deleteUser",
+        "value" : "io.restassured.internal.RestAssuredResponseImpl@1651bd68"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 5,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "order"
+  }, {
+    "name" : "testClass",
+    "value" : "order.GetOrderTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "getOrdersAuthorizedTest"
+  }, {
+    "name" : "suite",
+    "value" : "Tests for orders retrieving"
+  }, {
+    "name" : "host",
+    "value" : "casper1143.local"
+  }, {
+    "name" : "thread",
+    "value" : "9064@casper1143.local.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "146f4d8c806e0dc3.json",
+  "parameterValues" : [ ]
+}

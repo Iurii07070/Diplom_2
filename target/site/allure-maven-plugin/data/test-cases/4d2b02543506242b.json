@@ -1,0 +1,219 @@
+{
+  "uid" : "4d2b02543506242b",
+  "name" : "Check status code of change authorized user",
+  "fullName" : "user.ChangeUserTest.changeAuthorizedUserTest",
+  "historyId" : "d587873c9c254b5df35ad5b2d4ead194",
+  "time" : {
+    "start" : 1717451275880,
+    "stop" : 1717451278524,
+    "duration" : 2644
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Create a new user",
+      "time" : {
+        "start" : 1717451275880,
+        "stop" : 1717451276404,
+        "duration" : 524
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "user",
+        "value" : "User{email='l23vGTts1dM@yandex.ru', password='otOun78JrPc6', name='H9WMfUo'}"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Assert user creation successful",
+      "time" : {
+        "start" : 1717451276405,
+        "stop" : 1717451276449,
+        "duration" : 44
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "createResponse",
+        "value" : "io.restassured.internal.RestAssuredResponseImpl@dd5ea90"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Change user",
+      "time" : {
+        "start" : 1717451276470,
+        "stop" : 1717451276947,
+        "duration" : 477
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "user",
+        "value" : "User{email='9gEXSIhMLbT@yandex.ru', password='ojyUYNoiuC8N', name='Zr7np5I'}"
+      }, {
+        "name" : "token",
+        "value" : "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NWUzYTBjOWVkMjgwMDAxYjQyNjYwZSIsImlhdCI6MTcxNzQ1MTI3NiwiZXhwIjoxNzE3NDUyNDc2fQ.QTtAyHAC_q6KWsHByp_gATGfZdIX15sgbk0XCvMfF5w"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Assert change user response",
+      "time" : {
+        "start" : 1717451276954,
+        "stop" : 1717451277069,
+        "duration" : 115
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "changeResponse",
+        "value" : "io.restassured.internal.RestAssuredResponseImpl@5086e144"
+      }, {
+        "name" : "changedUser",
+        "value" : "User{email='9gEXSIhMLbT@yandex.ru', password='ojyUYNoiuC8N', name='Zr7np5I'}"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Login user",
+      "time" : {
+        "start" : 1717451277070,
+        "stop" : 1717451277541,
+        "duration" : 471
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "user",
+        "value" : "User{email='9gEXSIhMLbT@yandex.ru', password='ojyUYNoiuC8N', name='Zr7np5I'}"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Assert login user success",
+      "time" : {
+        "start" : 1717451277542,
+        "stop" : 1717451277592,
+        "duration" : 50
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "loginResponse",
+        "value" : "io.restassured.internal.RestAssuredResponseImpl@3207e6de"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Delete user",
+      "time" : {
+        "start" : 1717451277593,
+        "stop" : 1717451278473,
+        "duration" : 880
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "user",
+        "value" : "User{email='l23vGTts1dM@yandex.ru', password='otOun78JrPc6', name='H9WMfUo'}"
+      }, {
+        "name" : "token",
+        "value" : "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NWUzYTBjOWVkMjgwMDAxYjQyNjYwZSIsImlhdCI6MTcxNzQ1MTI3NiwiZXhwIjoxNzE3NDUyNDc2fQ.QTtAyHAC_q6KWsHByp_gATGfZdIX15sgbk0XCvMfF5w"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Assert delete user success",
+      "time" : {
+        "start" : 1717451278473,
+        "stop" : 1717451278523,
+        "duration" : 50
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "deleteUser",
+        "value" : "io.restassured.internal.RestAssuredResponseImpl@4ff1b0d"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 8,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "user"
+  }, {
+    "name" : "testClass",
+    "value" : "user.ChangeUserTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "changeAuthorizedUserTest"
+  }, {
+    "name" : "suite",
+    "value" : "Tests for user change"
+  }, {
+    "name" : "host",
+    "value" : "casper1143.local"
+  }, {
+    "name" : "thread",
+    "value" : "9064@casper1143.local.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "4d2b02543506242b.json",
+  "parameterValues" : [ ]
+}
