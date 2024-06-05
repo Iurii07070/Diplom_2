@@ -15,7 +15,6 @@ import static io.restassured.RestAssured.given;
 
 public class OrderAPI {
 
-
     public List<Ingredient> getIngredients() {
         Response response = given().get(RestApiConstants.INGREDIENT_URL);
         JsonParser jsonParser = new JsonParser();
@@ -48,5 +47,4 @@ public class OrderAPI {
                 .header("Authorization", accessToken)
                 .get(RestApiConstants.ALL_ORDERS_URL);
     }
-
 }

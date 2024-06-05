@@ -13,7 +13,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 @DisplayName("Tests for user log in")
-public class LoginUserTest {
+public class LoginUserTests {
     private UserAPI userAPI;
     private UserAssertions userAssertions;
     private User user;
@@ -30,10 +30,8 @@ public class LoginUserTest {
         Response createUserResponse = userAPI.createUser(user);
         userAssertions.assertUserCreationSuccessful(createUserResponse);
 
-        // Extract accessToken from the createUserResponse
         accessToken = createUserResponse.path("accessToken");
 
-        // Initialize userLogin with the same credentials as user
         userLogin = new User(user.getEmail(), user.getPassword(), user.getName());
     }
 
@@ -48,7 +46,6 @@ public class LoginUserTest {
     @Test
     @DisplayName("Check status code of login user")
     public void loginUserTest() {
-        // Attempt to log in with the newly created user
         Response loginResponse = userAPI.loginUser(userLogin);
         userAssertions.assertLoginUserSuccess(loginResponse);
     }
@@ -56,10 +53,7 @@ public class LoginUserTest {
     @Test
     @DisplayName("Check status code of login user with wrong email")
     public void loginUserWithWrongEmailTest() {
-        // Modify the email to an incorrect value
         userLogin.setEmail("1234" + userLogin.getEmail());
-
-        // Attempt to log in with the incorrect email
         Response loginResponse = userAPI.loginUser(userLogin);
         userAssertions.assertLoginUserFailure(loginResponse);
     }
@@ -67,10 +61,7 @@ public class LoginUserTest {
     @Test
     @DisplayName("Check status code of login user with wrong password")
     public void loginUserWithWrongPasswordTest() {
-        // Modify the password to an incorrect value
         userLogin.setPassword(userLogin.getPassword() + "1234");
-
-        // Attempt to log in with the incorrect password
         Response loginResponse = userAPI.loginUser(userLogin);
         userAssertions.assertLoginUserFailure(loginResponse);
     }
@@ -78,14 +69,9 @@ public class LoginUserTest {
     @Test
     @DisplayName("Check status code of logout user")
     public void logoutUserTest() {
-        // Log in with the newly created user
         Response loginResponse = userAPI.loginUser(userLogin);
         userAssertions.assertLoginUserSuccess(loginResponse);
-
-        // Extract the refresh token from the login response
         String refreshToken = loginResponse.path("refreshToken");
-
-        // Log out using the refresh token
         Response logoutResponse = userAPI.logoutUser(refreshToken);
         userAssertions.assertLogoutUserSuccess(logoutResponse);
     }

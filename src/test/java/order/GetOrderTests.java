@@ -15,7 +15,7 @@ import praktikum.user.UserUtils;
 import praktikum.user.UserAssertions;
 
 @DisplayName("Tests for orders retrieving")
-public class GetOrderTest {
+public class GetOrderTests {
     private OrderAPI orderAPI;
     private UserAPI userAPI;
     private UserAssertions userAssertions;

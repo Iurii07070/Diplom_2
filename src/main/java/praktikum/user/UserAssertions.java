@@ -77,5 +77,4 @@ public class UserAssertions {
                 .body("success", equalTo(true))
                 .statusCode(SC_ACCEPTED);
     }
-
 }

@@ -15,7 +15,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @DisplayName("Tests for orders creation")
-public class CreateOrderTest {
+public class CreateOrderTests {
     private OrderAPI orderAPI;
     private OrderAssertions orderAssertions;
 

@@ -13,13 +13,13 @@ import org.junit.Test;
 import static praktikum.constants.RestApiConstants.BASE_URI;
 
 @DisplayName("Tests for user creation")
-public class CreateUserTest {
+public class CreateUserTests {
     private UserAPI userAPI;
     private UserAssertions userAssertions;
 
     @Before
     public void setUp() {
-        RestAssured.baseURI = BASE_URI;  // Use constant for base URI
+        RestAssured.baseURI = BASE_URI;
         userAPI = new UserAPI();
         userAssertions = new UserAssertions();
     }
