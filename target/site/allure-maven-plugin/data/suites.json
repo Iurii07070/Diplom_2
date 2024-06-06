@@ -1,0 +1,259 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "children" : [ {
+    "name" : "Tests for orders creation",
+    "children" : [ {
+      "name" : "Check status code of create order",
+      "uid" : "e86df56d829b435a",
+      "parentUid" : "4cba8d02cade6156290e6b32a8d62cdc",
+      "status" : "passed",
+      "time" : {
+        "start" : 1717451254592,
+        "stop" : 1717451262465,
+        "duration" : 7873
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Check status code of create order with wrong ingredients",
+      "uid" : "1c349c66386919ee",
+      "parentUid" : "4cba8d02cade6156290e6b32a8d62cdc",
+      "status" : "passed",
+      "time" : {
+        "start" : 1717451262542,
+        "stop" : 1717451263008,
+        "duration" : 466
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Check status code of create order without ingredients",
+      "uid" : "5138312c38fc8f65",
+      "parentUid" : "4cba8d02cade6156290e6b32a8d62cdc",
+      "status" : "passed",
+      "time" : {
+        "start" : 1717451263013,
+        "stop" : 1717451263508,
+        "duration" : 495
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "4cba8d02cade6156290e6b32a8d62cdc"
+  }, {
+    "name" : "Tests for orders retrieving",
+    "children" : [ {
+      "name" : "Check if fifty orders in response",
+      "uid" : "355005806d984d95",
+      "parentUid" : "5c638b1aaaed64dca43a208954f56514",
+      "status" : "passed",
+      "time" : {
+        "start" : 1717451263569,
+        "stop" : 1717451266178,
+        "duration" : 2609
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Check status code of get orders when user authorized",
+      "uid" : "146f4d8c806e0dc3",
+      "parentUid" : "5c638b1aaaed64dca43a208954f56514",
+      "status" : "passed",
+      "time" : {
+        "start" : 1717451266182,
+        "stop" : 1717451268395,
+        "duration" : 2213
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Check status code of get orders when user not authorized",
+      "uid" : "45472680c47f221d",
+      "parentUid" : "5c638b1aaaed64dca43a208954f56514",
+      "status" : "passed",
+      "time" : {
+        "start" : 1717451268405,
+        "stop" : 1717451270439,
+        "duration" : 2034
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "5c638b1aaaed64dca43a208954f56514"
+  }, {
+    "name" : "Tests for user change",
+    "children" : [ {
+      "name" : "Check status code of change unauthorized user",
+      "uid" : "74b726609af08545",
+      "parentUid" : "52c4ca08b9dbaaa89bdb727162a2b5d8",
+      "status" : "passed",
+      "time" : {
+        "start" : 1717451270446,
+        "stop" : 1717451272584,
+        "duration" : 2138
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Check status code of change authorized user with existing email",
+      "uid" : "b80f184983485cf4",
+      "parentUid" : "52c4ca08b9dbaaa89bdb727162a2b5d8",
+      "status" : "passed",
+      "time" : {
+        "start" : 1717451272588,
+        "stop" : 1717451275875,
+        "duration" : 3287
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Check status code of change authorized user",
+      "uid" : "4d2b02543506242b",
+      "parentUid" : "52c4ca08b9dbaaa89bdb727162a2b5d8",
+      "status" : "passed",
+      "time" : {
+        "start" : 1717451275880,
+        "stop" : 1717451278524,
+        "duration" : 2644
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "52c4ca08b9dbaaa89bdb727162a2b5d8"
+  }, {
+    "name" : "Tests for user log in",
+    "children" : [ {
+      "name" : "Check status code of login user",
+      "uid" : "3b51ac31059d256c",
+      "parentUid" : "e5a104ea6b5e4fd7b565fe09f9d54042",
+      "status" : "passed",
+      "time" : {
+        "start" : 1717451278531,
+        "stop" : 1717451280375,
+        "duration" : 1844
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Check status code of login user with wrong email",
+      "uid" : "603283efb271be0b",
+      "parentUid" : "e5a104ea6b5e4fd7b565fe09f9d54042",
+      "status" : "passed",
+      "time" : {
+        "start" : 1717451280377,
+        "stop" : 1717451282114,
+        "duration" : 1737
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Check status code of login user with wrong password",
+      "uid" : "ebf233b507b40bc4",
+      "parentUid" : "e5a104ea6b5e4fd7b565fe09f9d54042",
+      "status" : "passed",
+      "time" : {
+        "start" : 1717451282117,
+        "stop" : 1717451283908,
+        "duration" : 1791
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Check status code of logout user",
+      "uid" : "5033ec4babb41f4c",
+      "parentUid" : "e5a104ea6b5e4fd7b565fe09f9d54042",
+      "status" : "passed",
+      "time" : {
+        "start" : 1717451283912,
+        "stop" : 1717451286325,
+        "duration" : 2413
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "e5a104ea6b5e4fd7b565fe09f9d54042"
+  }, {
+    "name" : "Tests for user creation",
+    "children" : [ {
+      "name" : "Check status code of create user without email",
+      "uid" : "f360e66e983b5e",
+      "parentUid" : "c8f3c745a3bc962cb289fb9070fc5cb9",
+      "status" : "passed",
+      "time" : {
+        "start" : 1717451286335,
+        "stop" : 1717451286773,
+        "duration" : 438
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Check status code of create user without name",
+      "uid" : "8f19c3c899d98a31",
+      "parentUid" : "c8f3c745a3bc962cb289fb9070fc5cb9",
+      "status" : "passed",
+      "time" : {
+        "start" : 1717451286780,
+        "stop" : 1717451287206,
+        "duration" : 426
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Check status code of create registered user",
+      "uid" : "9c616a619bae10f3",
+      "parentUid" : "c8f3c745a3bc962cb289fb9070fc5cb9",
+      "status" : "passed",
+      "time" : {
+        "start" : 1717451287221,
+        "stop" : 1717451288979,
+        "duration" : 1758
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Check status code of create user without password",
+      "uid" : "45737a3f1581c085",
+      "parentUid" : "c8f3c745a3bc962cb289fb9070fc5cb9",
+      "status" : "passed",
+      "time" : {
+        "start" : 1717451289000,
+        "stop" : 1717451289382,
+        "duration" : 382
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Check status code of create user",
+      "uid" : "c4d073d02b06ef10",
+      "parentUid" : "c8f3c745a3bc962cb289fb9070fc5cb9",
+      "status" : "passed",
+      "time" : {
+        "start" : 1717451289385,
+        "stop" : 1717451290598,
+        "duration" : 1213
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "c8f3c745a3bc962cb289fb9070fc5cb9"
+  } ],
+  "name" : "suites"
+}

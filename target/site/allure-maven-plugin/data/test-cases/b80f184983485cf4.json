@@ -1,0 +1,255 @@
+{
+  "uid" : "b80f184983485cf4",
+  "name" : "Check status code of change authorized user with existing email",
+  "fullName" : "user.ChangeUserTest.changeAuthorizedUserWithExistingEmailTest",
+  "historyId" : "85a18b4fcf19baf2042e82c61154b852",
+  "time" : {
+    "start" : 1717451272588,
+    "stop" : 1717451275875,
+    "duration" : 3287
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Create a new user",
+      "time" : {
+        "start" : 1717451272588,
+        "stop" : 1717451273089,
+        "duration" : 501
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "user",
+        "value" : "User{email='L0bVWcOeH4f@yandex.ru', password='hOXSAK50CeWU', name='Sk6M9mk'}"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Assert user creation successful",
+      "time" : {
+        "start" : 1717451273089,
+        "stop" : 1717451273137,
+        "duration" : 48
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "createResponse",
+        "value" : "io.restassured.internal.RestAssuredResponseImpl@44b99f09"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Create a new user",
+      "time" : {
+        "start" : 1717451273156,
+        "stop" : 1717451273713,
+        "duration" : 557
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "user",
+        "value" : "User{email='yuN5gSgOZEH@yandex.ru', password='PMGpK43EShO6', name='ICjIAqe'}"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Assert user creation successful",
+      "time" : {
+        "start" : 1717451273714,
+        "stop" : 1717451273754,
+        "duration" : 40
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "createResponse",
+        "value" : "io.restassured.internal.RestAssuredResponseImpl@23b4f0a9"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Change user",
+      "time" : {
+        "start" : 1717451273755,
+        "stop" : 1717451274265,
+        "duration" : 510
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "user",
+        "value" : "User{email='yuN5gSgOZEH@yandex.ru', password='hOXSAK50CeWU', name='Sk6M9mk'}"
+      }, {
+        "name" : "token",
+        "value" : "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NWUzYTA5OWVkMjgwMDAxYjQyNjYwOSIsImlhdCI6MTcxNzQ1MTI3MywiZXhwIjoxNzE3NDUyNDczfQ.xB3mXN7Buj9am0SyS8MUfVJ7RsBTnr33U-7ekoEYH2Q"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Assert change user with existing email failure",
+      "time" : {
+        "start" : 1717451274272,
+        "stop" : 1717451274325,
+        "duration" : 53
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "changeResponse",
+        "value" : "io.restassured.internal.RestAssuredResponseImpl@49c3487f"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Delete user",
+      "time" : {
+        "start" : 1717451274346,
+        "stop" : 1717451274999,
+        "duration" : 653
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "user",
+        "value" : "User{email='yuN5gSgOZEH@yandex.ru', password='PMGpK43EShO6', name='ICjIAqe'}"
+      }, {
+        "name" : "token",
+        "value" : "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NWUzYTA5OWVkMjgwMDAxYjQyNjYwYiIsImlhdCI6MTcxNzQ1MTI3MywiZXhwIjoxNzE3NDUyNDczfQ.ZhrByNxATLFyfclfBrBe6MKH2i4clRJrNo3kOgIU6A8"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Assert delete user success",
+      "time" : {
+        "start" : 1717451275000,
+        "stop" : 1717451275065,
+        "duration" : 65
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "deleteUser",
+        "value" : "io.restassured.internal.RestAssuredResponseImpl@136c3a6"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Delete user",
+      "time" : {
+        "start" : 1717451275065,
+        "stop" : 1717451275824,
+        "duration" : 759
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "user",
+        "value" : "User{email='L0bVWcOeH4f@yandex.ru', password='hOXSAK50CeWU', name='Sk6M9mk'}"
+      }, {
+        "name" : "token",
+        "value" : "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NWUzYTA5OWVkMjgwMDAxYjQyNjYwOSIsImlhdCI6MTcxNzQ1MTI3MywiZXhwIjoxNzE3NDUyNDczfQ.xB3mXN7Buj9am0SyS8MUfVJ7RsBTnr33U-7ekoEYH2Q"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Assert delete user success",
+      "time" : {
+        "start" : 1717451275826,
+        "stop" : 1717451275874,
+        "duration" : 48
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "deleteUser",
+        "value" : "io.restassured.internal.RestAssuredResponseImpl@69780093"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 10,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "user"
+  }, {
+    "name" : "testClass",
+    "value" : "user.ChangeUserTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "changeAuthorizedUserWithExistingEmailTest"
+  }, {
+    "name" : "suite",
+    "value" : "Tests for user change"
+  }, {
+    "name" : "host",
+    "value" : "casper1143.local"
+  }, {
+    "name" : "thread",
+    "value" : "9064@casper1143.local.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "b80f184983485cf4.json",
+  "parameterValues" : [ ]
+}
